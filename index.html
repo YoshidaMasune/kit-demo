@@ -11,40 +11,45 @@
     <div id="app">
       <header>
         <nav>
-          <div class="nav-con">
+          <div class="nav-con flex-rows center-between">
             <div class="nav-logo">
-              <img src="" alt="" />
+              <h1>ชา ของประเทศไทย</h1>
             </div>
-          </div>
 
-          <div class="nav">
-            <ul class="nav-menu">
-              <li>
-                <a href="#">ประวัติใบชา</a>
-              </li>
-              <li>
-                <a href="#">ประเภท</a>
-              </li>
-              <li>
-                <a href="#">สถานที่</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="header">
-            <div class="title">
-              <div class="logo-title">
-                <img src="./imgs/tea-01.jpg" alt="" />
-              </div>
-              <article class="text-title">ของประเทศไทย</article>
-
-              <a href="#" class="next-page btn"> หน้าต่อไป </a>
+            <div class="nav">
+              <ul class="nav-menu flex-rows">
+                <li>
+                  <a href="#">ประวัติใบชา</a>
+                </li>
+                <li>
+                  <a href="#">ประเภท</a>
+                </li>
+                <li>
+                  <a href="#">สถานที่</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
+
+        <div class="header">
+          <div class="title">
+            <div class="logo-title">
+              <h1>ชา</h1>
+            </div>
+            <article class="text-title">ของประเทศไทย</article>
+            <a href="#" class="next-page btn"> หน้าต่อไป </a>
+          </div>
+        </div>
       </header>
 
       <div class="contents container">
+        <!--
+
+          >>> Histories of tea <<< 
+
+          -->
+
         <section class="content history">
           <div class="head-content">
             <h2>ประวัติใบชาในประเทศไทย</h2>
@@ -53,14 +58,18 @@
             <div class="logo">
               <h1>ชา</h1>
             </div>
-            <div class="flex cols-2">
-              <section class="col-1">
-                <img src="./imgs/tea-01.jpg" alt="" />
-                <img src="./imgs/tea-01.jpg" alt="" />
+            <div class="flex-rows histories-con">
+              <section class="flex-cols histories-imgs">
+                <div class="img">
+                  <img src="./imgs/tea-01.jpg" alt="" />
+                </div>
+                <div class="img">
+                  <img src="./imgs/tea-01.jpg" alt="" />
+                </div>
               </section>
 
-              <section class="col-2">
-                <article>
+              <section class="col-2 histories-info">
+                <article class="flex-cols">
                   <div class="head-info">
                     <h3>ประวัติของชา</h3>
                   </div>
@@ -84,15 +93,22 @@
             </div>
           </div>
         </section>
+
+        <!--
+
+          >>> types tea <<< 
+
+          -->
+
         <section class="type-tea">
           <div class="head-content">
             <h2>ประเภทของชาที่นิยมดื่มในปัจจุบัน</h2>
           </div>
-          <div class="flex-rows rows-2">
-            <div class="logo">
-              <h1>ชา</h1>
-            </div>
-            <div class="row">
+          <div class="logo">
+            <h1>ชา</h1>
+          </div>
+          <div class="flex-cols">
+            <div class="flex-rows type-info center-between">
               <div class="card">
                 <img src="./imgs/tea-01.jpg" alt="" />
                 <div class="tea-info">
@@ -124,7 +140,7 @@
                 <button class="btn-hero">อ่านเพิ่มเติม</button>
               </div>
             </div>
-            <div class="row">
+            <div class="flex-rows type-info evently">
               <div class="card">
                 <img src="./imgs/tea-01.jpg" alt="" />
                 <div class="tea-info">
@@ -149,19 +165,69 @@
           </div>
         </section>
 
+        <!--
+
+          >>> popula of  tea <<< 
+
+          -->
+
         <section class="popula-tea">
           <div class="head-content">
             <h2>สถานที่ปลูก ยอดฮิด</h2>
+          </div>
 
-            <div class="flex-cols cols-2">
-              <div class="col flex-cols">
+          <div class="">
+            <div class="flex-rows">
+              <div class="flex-cols">
                 <img src="./imgs/tea-01.jpg" alt="" />
                 <img src="./imgs/tea-01.jpg" alt="" />
+              </div>
+              <div class="flex-cols">
+                <section>
+                  <svg width="40%" viewBox="0 0 500 200">
+                    <path
+                      id="curve"
+                      fill="transparent"
+                      d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
+                    />
+                    <text width="500">
+                      <textPath xlink:href="#curve">
+                        Dangerous Curves Ahead
+                      </textPath>
+                    </text>
+                  </svg>
+                </section>
+                <section>
+                  <div class="head-te">
+                    <h2>GPS ไร่ชา บ้านรักไทย</h2>
+                  </div>
+                  <img src="./imgs//tea-01.jpg" alt="" />
+                </section>
               </div>
             </div>
           </div>
         </section>
       </div>
+
+      <footer>
+        <div class="foot-con">
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

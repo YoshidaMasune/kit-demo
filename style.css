@@ -1,3 +1,171 @@
+:root {
+  --clr-primary: #3d8361;
+  --clr-seecondary: #1C6758;
+  --clr-seecondary-tarn: #1c6758c0;
+  --cls-hero-1: #D6CDA4;
+  --cls-hero-2: #EEF2E6;
+  --cls-white: #ffffff;
+  --mar-cen: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
-  width: 50%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* utilities class */
+
+.flex-rows {
+  display: flex;
+}
+
+.flex-cols {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.center-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center-evently {
+  justify-content: space-evenly;
+}
+
+
+/* Nav-bar */
+
+nav {
+  background-color: var(--clr-seecondary-tarn);
+  padding: .5rem 0;
+}
+
+.nav-con {
+  max-width: 1200px;
+  max-width: 90%;
+  margin: var(--mar-cen)
+}
+
+.nav-logo h1 {
+  font-size: 30px;
+  color: var(--clr-primary);
+}
+
+.nav-menu {
+  gap: 1.225rem;
+}
+
+.nav-menu>li {
+  border: 1px dashed #ffffff;
+  border-radius: 1rem;
+  padding: .225rem 1rem;
+}
+
+/* header */
+/* header background image */
+
+header {
+  background: url('./imgs/tea-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header>.title {
+  position: absolute;
+  text-align: center;
+  color: var(--cls-white);
+}
+
+/* contents */
+
+.contents {
+  max-width: 70%;
+  margin: var(--mar-cen);
+  padding: 0 1rem;
+}
+
+.contents>section {
+  position: relative;
+  margin-top: 5rem;
+  min-height: 70vh;
+}
+
+.contents>section::before {
+  content: '';
+  position: absolute;
+  min-width: 90vw;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 2px;
+  opacity: .4;
+  background: rgb(34, 53, 195);
+  background: linear-gradient(0deg, rgba(34, 53, 195, 1) 0%, rgba(45, 253, 163, 1) 100%);
+}
+
+.head-content {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* histoties content */
+
+.info-con .histories-con {
+  gap: 5rem;
+  justify-content: space-evenly;
+}
+
+.histories-imgs {
+  gap: 2rem;
+}
+
+.histories-imgs>.img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.histories-imgs img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.histories-info>article {
+  height: 80%;
+  justify-content: space-between;
+}
+
+/* types of tea */
+
+.type-info>.card {
+  text-align: center;
+  flex-basis: 20%;
 }
