@@ -48,6 +48,13 @@ a {
   justify-content: space-evenly;
 }
 
+.text-shadow {
+  text-shadow: .25rem .28rem 3px #4f534f;
+}
+
+.text-center {
+  text-align: center;
+}
 
 /* Nav-bar */
 
@@ -102,6 +109,10 @@ header {
   color: var(--cls-white);
 }
 
+header .text-title>h1 {
+  white-space: nowrap;
+}
+
 /* contents */
 
 .contents {
@@ -126,7 +137,7 @@ header {
   height: 2px;
   opacity: .4;
   background: rgb(34, 53, 195);
-  background: linear-gradient(0deg, rgba(34, 53, 195, 1) 0%, rgba(45, 253, 163, 1) 100%);
+  background: linear-gradient(0deg, var(--clr-seecondary) 0%, var(--cls-hero-1) 100%);
 }
 
 .head-content {
@@ -168,4 +179,22 @@ header {
 .type-info>.card {
   text-align: center;
   flex-basis: 20%;
+}
+
+.img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* popula tea */
+
+.popula-1 {
+  gap: 2rem;
+}
+
+.popula-1>img {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1.12rem;
+  box-shadow: -7px -6px 4px var(--clr-seecondary);
 }
